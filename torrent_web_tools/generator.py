@@ -375,7 +375,7 @@ def valid_piece_length(string):
     return length
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description='Generates torrent files from static website files.')
 
     parser.add_argument('input', metavar='INPUT', type=file_or_dir, nargs='+',
@@ -462,3 +462,7 @@ if __name__ == "__main__":
         print("Output torrent: %s" % full_output_path)
     else:
         exit("Failed to write torrent file.")
+
+
+if __name__ == "__main__":
+    main()
